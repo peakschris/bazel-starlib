@@ -57,6 +57,7 @@ def updatesrc_diff_and_update(
             name = diff_test_prefix + src_name + diff_test_suffix,
             file1 = src,
             file2 = out,
+            file2_to_lf = True,
             visibility = diff_test_visibility,
             **kwargs
         )
