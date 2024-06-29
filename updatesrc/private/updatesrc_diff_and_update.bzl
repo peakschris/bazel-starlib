@@ -53,6 +53,7 @@ def updatesrc_diff_and_update(
         src = srcs[idx]
         out = outs[idx]
         src_name = src.replace("/", "_")
+
         # this difftest fails as file2 has CRLf on windows
         # fix: https://github.com/bazelbuild/bazel-skylib/pull/527
         diff_test(
