@@ -39,7 +39,6 @@ archive_tar_gz="$(rlocation_as_unix "${archive_tar_gz_location}")" || \
 
 # MARK - Test
 
-echo ${archive_tar_gz}
 contents="$(tar -tf "${archive_tar_gz}")"
 assert_match "bzlrelease/" "${contents}" 
 assert_match "bzlrelease/private/" "${contents}" 
